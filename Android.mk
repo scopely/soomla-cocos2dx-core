@@ -11,7 +11,7 @@ CORE_SRC_LIST += $(wildcard $(LOCAL_PATH)/Soomla/domain/*.cpp)
 CORE_SRC_LIST += $(wildcard $(LOCAL_PATH)/Soomla/data/*.cpp)
 CORE_SRC_LIST += $(wildcard $(LOCAL_PATH)/Soomla/rewards/*.cpp)
 
-LOCAL_SRC_FILES := $(CORE_SRC_LIST)
+LOCAL_SRC_FILES := $(CORE_SRC_LIST:$(LOCAL_PATH)/%=%)
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/Soomla
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/Soomla/data
